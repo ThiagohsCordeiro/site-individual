@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body style="background-color: #364966;">
+    <!-- Barra de navegação -->
+    <div class="padrao">
+        <div class="fixed">
+            <div class="header">
+                <div class="container2">
+                    <!-- <img src="./assets/img/logo2-semfundopng.png" alt=""> -->
+                    <h1 style="color: #FD4556;">VALORANT PICK</h1>
+                    <ul class="navbar">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li class="active"><a href="#">Pick de Agente</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+<br><br><br>
+        <h2></h2>
+    <div class="banner-blur">
+        <div class="container">
+            <h2>Descobrindo seu Agente</h2><br><br>
+            <img src="https://cdn-icons.flaticon.com/png/512/2186/premium/2186299.png?token=exp=1637006986~hmac=992c13e2cc26c0ceccfe0b5ecbd867cb" style="width: 70px; height: 70px;" alt="">
+            <br>
+            <select id="select_perfil" class="select">
+                <option value="0">Selecione seu Perfil</option>
+                <option value="1">Agressivo</option>
+                <option value="2">Passivo</option>
+            </select>  <br>
+            <select id="select_tipo_jogo" class="select">
+                <option value="0">Qual seu Tipo de Jogo</option>
+                <option value="1">Controlador (a)</option>
+                <option value="2">Duelista</option>
+                <option value="3">Iniciador (a)</option>
+                <option value="4">Sentinela</option>
+            </select>
+                <br><br>
+
+                <button onclick="simular()" class="btn1">SIMULAR</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <p>Desenvolvido por Thiago Henrique  1 ADS A - 2021</p>
+    </div>
+    </body>
+    </html>
+
+    <script>
+    function simular() {
+   
+        if(select_perfil.value == 0) {
+            alert("Para proseguir, selecione o seu Perfil")
+        }
+        else if (select_tipo_jogo.value == 0) {
+            alert("Para proseguir, selecione o seu Tipo de Jogo")
+        }
+        else if (select_perfil.value == 1 && select_tipo_jogo.value == 1) {
+            alert("Um ótimo Controlador para você jogar é o OMEN, pois mesmo ele sendo um controlador, é possível fazer muitas jogadas com esse Agente")
+        }
+        else if (select_perfil.value == 1 && select_tipo_jogo.value == 2) { 
+            alert("Pro você separamos duas poderosas Agentes, a Jett e a Raze, Ambas contam com uma mobilidade invejável")
+        }
+        else if (select_perfil.value == 1 && select_tipo_jogo.value == 3) { 
+            alert("Como Iníciador agressívo existem dois Agentes que conseguem exercer essa função com excelência, São eles o Breach e  KAY/O, foca neles que vai dar bom!")
+        } 
+        else if (select_perfil.value == 1 && select_tipo_jogo.value == 4) { 
+            alert("AVISO!, não recomendamos que você jogue agressivamente com Sentinelas. Porém, Todavia, Entretanto, todo jogador de Valorant, já ouviu falar da SAGE AGRESSIVA. Então só Vai, Sage será sua Main")
+        }
+    //TROCA
+        else if (select_perfil.value == 2 && select_tipo_jogo.value == 1) { 
+            alert("Você está com sorte, pode escolher entre 3 opcões, são elas o Agente Brimstone, e as poderosas Agentes Astra e Viper. Esses se encaixam no seu Perfil")
+        }
+        else if (select_perfil.value == 2 && select_tipo_jogo.value == 2) { 
+            alert("Temos bons Duelistas para você, Você pode escolher entre Phoenyx, Reyna e Yoru. Ambos combinam com seu Perfil de Jogo")
+        }
+        else if (select_perfil.value == 2 && select_tipo_jogo.value == 3) { 
+            alert("Para essa função no jogo temos poucos players com este perfil, Sorte a nossa termos você por aqui. Jogue com o Sova ou a SKYE e Divita-se!")
+        }
+        else if (select_perfil.value == 2 && select_tipo_jogo.value == 4) {  
+            alert("Sim, Nó amamos vocês, seu Perfil é um dos mais queridos no jogo, pois você dará o suporte para o seu time. Joguem com Cypher ou Killjoy")
+        }
+
+    }
+
+ 
+</script>

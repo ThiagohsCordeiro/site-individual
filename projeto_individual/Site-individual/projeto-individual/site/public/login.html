@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body style="background-color: #364966;">
+    <!-- Barra de navegação -->
+    <div class="padrao">
+        <div class="fixed">
+            <div class="header">
+                <div class="container2">
+                    <!-- <img src="./assets/img/logo2-semfundopng.png" alt=""> -->
+                    <h1 style="color: #FD4556;">VALORANT PICK</h1>
+                    <ul class="navbar">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="pick_agente.html">Pick de Agente</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li class="active"><a href="#">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+<br><br><br>
+        <!-- Banner com fundo desfocado e caixa de login -->
+        <div class="banner-blur">
+            <div class="container">
+                <h1>Login</h1>
+                <input class="textbox" id="ipt_email" type="email" placeholder="E-mail">
+                <input class="textbox" id="ipt_senha" type="password" placeholder="Senha">
+                <input class='btn' type="button" value="Login" onclick="autenticar()">
+                Não tem uma conta? <a href="cadastro.html"><span style="cursor: pointer; color: #FD4556; font-weight: bolder;">Cadastre-se</span></a>
+                <!-- <a href="">Esqueci a senha</a> -->
+            </div>
+        </div>
+   
+        <div class="footer">
+            <p>Desenvolvido por Thiago Henrique  1 ADS A - 2021</p>
+        </div>
+        </body>
+        </html>
+<script>
+    function autenticar() {
+        if (ipt_email.value == 'fernando.brandao@bandtec.com.br' && ipt_senha.value == 'brandao@bandtec100') {
+            alert('Login efetuado com sucesso')
+            window.location.href = 'index.html'  
+        }
+        else {
+            alert('Login e/ou Senha incorretos')
+        }
+    }
+</script>

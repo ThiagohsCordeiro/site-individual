@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body style="background-color: #364966;">
+    <!-- Barra de navegação -->
+    <div class="padrao">
+        <div class="fixed">
+            <div class="header">
+                <div class="container2">
+                    <!-- <img src="./assets/img/logo2-semfundopng.png" alt=""> -->
+                    <h1 style="color: #FD4556;">VALORANT PICK</h1>
+                    <ul class="navbar">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="pick_agente.html">Pick de Agente</a></li>
+                        <li class="active"><a href="#">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+    <div class="banner-blur">
+        <div class="container"><br>
+            <h2>CADASTR-SE</h2><br><br>
+            <!-- <img src="https://cdn-icons.flaticon.com/png/512/2186/premium/2186299.png?token=exp=1637006986~hmac=992c13e2cc26c0ceccfe0b5ecbd867cb" style="width: 70px; height: 70px;" alt=""> -->
+            <br>
+            <div>
+                <input class="textbox-cad" id="ipt_nome" type="text" placeholder="Qual seu Nome?">
+                <input class="textbox-cad" id="ipt_email_cadastro" type="text" placeholder="E-mail">
+               
+            </div>  <br>
+            <div>
+                <input class="textbox-cad" id="ipt_senha" type="password" placeholder="Senha">
+                <input class="textbox-cad" id="ipt_confirmsenha" type="password" placeholder="Confirme a senha">
+            </div>
+                <br><br>
+
+                <button class="btn" type="button" value="Cadastrar" onclick="verificar_senha()">Cadastrar</button>
+
+            Já é cadastrado? <a href="login.html"><span style="font-weight: bolder; color: #FD4556; cursor: pointer;">Faça Login</span></a>
+            </div>
+        </div>
+        
+    </div>
+   
+    
+    <div class="footer">
+        <p>Desenvolvido por Thiago Henrique  1 ADS A - 2021</p>
+    </div>
+    </body>
+    </html>
+
+<script>
+    function verificar_senha() { 
+        var qtd_caracteres_nome = ipt_nome.value.length > 3;
+        var qtd_caracteres_email = ipt_email_cadastro.value.length > 3;
+        var confirmacao = qtd_caracteres_nome && qtd_caracteres_email
+
+        if (ipt_senha.value == ipt_confirmsenha.value && confirmacao) {
+            alert('Cadastro efetuado com sucesso')
+            window.location.href = 'index.html'
+        }
+        else {
+            alert('Dados inválidos')
+        }
+    }
+</script>

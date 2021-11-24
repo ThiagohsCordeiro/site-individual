@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body style="background-color: #364966;">
+    <!-- Barra de navegação -->
+    <div class="padrao">
+        <div class="fixed">
+            <div class="header">
+                <div class="container2">
+                    <!-- <img src="./assets/img/logo2-semfundopng.png" alt=""> -->
+                    <h1 style="color: #FD4556;">VALORANT PICK</h1>
+                    <ul class="navbar">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="pick_agente.html">Pick de Agente</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+                <div class="contatoarea">
+                <div class="contatoinfo">
+                    <div><i class="fas fa-map-marker-alt"></i>Rua Haddock Lobo, 595 São Paulo - SP</div>
+                    <div><i class="fas fa-envelope"></i>Termovinhos@bandtec.com.br</div>
+                    <div><i class="fas fa-phone"></i>11-4002-8922</div>
+                    <div><i class="fas fa-clock"></i>De segunda a sexta 09:45 até 15:45</div>
+                </div>
+                <div class="contato-form">
+                    <h2>Fale conosco</h2>
+                    <form class="contato" method="post"></form>
+                    <input id='ipt_nome' type="text" name="nome" class="texto" placeholder="Seu nome" required>
+                    <input id='ipt_email' type="text" name="email" class="texto" placeholder="Seu Email" required>
+                    <textarea id='area' name="mensagem" rows="5" placeholder="O que podemos fazer por você?"
+                    required></textarea>
+                    <button onclick="enviar()" class="send-btn">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <div class="footer">
+            <p>Termovinho © 2021</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Desenvolvido por Thiago Henrique  1 ADS A - 2021</p>
+    </div>
+    </body>
+    </html>
+<script>
+    function enviar() {
+        var nome = ipt_nome.value
+        var email = ipt_email.value
+
+
+        if (nome.length > 1 && email.length > 5) {
+            informacao.style.display = 'block'
+            ipt_nome.value = " ";
+            ipt_email.value = " ";
+            area.value = " ";
+        }
+        else if (nome.length < 3 || email.length < 3) {
+            informacao2.style.display = 'block'
+
+        }
+
+
+    }
+</script>

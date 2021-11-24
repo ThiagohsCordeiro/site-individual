@@ -1,0 +1,612 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* .padrao {
+    padding: 0;
+    margin: 0;
+    background-color: te;
+    font-family: 'Cabin';
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+} */
+
+.banner {
+    background: url('https://images7.alphacoders.com/108/thumb-1920-1081001.jpg')  no-repeat fixed; 
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.header {
+    width: 100vw;
+    height: 11vh;
+    background: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    box-shadow: 5px 3px 3px #7a7878f5;
+}
+
+.container2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    
+    font-size: 17px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: 600;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #FD4556;
+}
+
+.active {
+    transform: scale(1.1);
+    text-shadow: 1px 1px 1px white;
+}
+
+/* -------- introdução ------------*/
+.introduction {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 70px;
+    
+}
+
+div .introduction h2 {
+    color: #FD4556;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px; 
+    font-weight: bolder;
+    box-shadow: 5px 3px 3px #7a7878f5;
+     
+}
+.container-introduction{
+    background-image: url('https://images.hdqwalls.com/wallpapers/valorant-logo-4k-q2.jpg');
+    height: 77vh;
+    width: 210vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text_intro{
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    float: left;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+/* -------- Sobre nos -----------*/
+.header-about {
+    width: 100vw;
+    height: 11vh;
+    background-color: #364966;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    /* box-shadow: 5px 3px 3px #800000; */
+}
+
+.container-about {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-about {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: 600;
+}
+
+.navbar-about li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.about{
+    height:100vh;
+    width: 100vw;
+    background: url('https://s3-eu-central-1.amazonaws.com/www-staging.esports.com/WP%20Media%20Folder%20-%20esports-com//var/app/current/web/app/uploads/2020/12/VALORANT-Agent-14.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: #fff;
+}
+.img{
+    opacity: 0;
+filter: alpha(opacity=100)
+}
+/* .topicos {
+width: 100px;
+height: 100px;
+justify-content: space-between;
+justify-content: flex-start;
+} */
+.about .message2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about img{
+    height: 140px;
+    width: 140px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about span{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
+
+
+
+/* ----------- Segundo banner -------------*/
+.part2 {
+  display: table;
+  height: 500px;
+  width: 100%;
+  background: url('../assets/img/servinho.jpg') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+
+/* ------------- Missão, Visão e Valores --------- */
+.purpose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e5
+    ;
+}
+
+.container-purpose {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-purpose h2 {
+    color: #800000;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px; 
+    font-weight: bolder;
+    box-shadow: 5px 3px 3px #ff0000f5;
+     
+}
+
+.icons {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+.icons img {
+    height: 120px;
+    width: 120px;
+    margin: 30px;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+/* --------------- css Login e cadastro e simulador ------------------ */
+.banner-blur {
+   
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #F5F5F5; */
+    background-image: url('https://images.hdqwalls.com/wallpapers/reyna-valorant-jx.jpg');
+}
+.select {
+    background-color: #FD4556;
+    color: #fff;
+    font-weight: bolder;
+    border: 2px #000 solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.select:hover {
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+    border: 2px #FD4556 solid;
+    border-radius: 15px;
+}
+    .btn1{
+        background: #fff;
+        color: #0a001a;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 7px;
+        border: 2px solid rgb(204,204,255);
+        outline: none;
+        box-shadow: 0px 5px 10px 3px rgb(204,204,255,0.5);
+    }
+    .btn1:hover {
+        background: #FD4556;
+        color: #fff;
+        border: 2px solid #0a001a;
+    }
+
+.container {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    margin-top: 100px;
+    margin: 50px;
+    border: 2px #FD4556 solid;
+  
+    padding: 30px;
+}
+
+.container span {
+    font-weight: bolder;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.textbox {
+    height: 8%;
+    width: 50%;
+    padding-left: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;    
+}
+
+.textbox-cad {
+    height: 80%;
+    width: 50%;
+    padding-left: 5px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 15px;
+    background: #fff;
+
+}
+input::placeholder {
+    color: #000;
+}
+
+
+.textbox-cad:hover {
+    height: 85%;
+    border: 3px solid #FD4556;
+    cursor: pointer;
+
+}
+
+.container div {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn {
+    width: 40%;
+    height: 10%;
+    border: 2px solid #FD4556 ;
+    border-radius: 20px;
+    cursor: pointer;
+    background: none;
+    margin: 20px;  
+}
+
+.textbox:hover {
+    width: 60%;
+    border: 2px solid #FD4556;
+}
+
+.btn:hover {
+    background-color: #FD4556;
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+   
+}
+
+.message {
+    margin-right: -150px;
+    width: 14%;
+    color: white;
+    font-size: 35px;
+}    
+
+.message span {
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;
+}
+
+.result {
+    font-size: 18px;
+}
+
+/* ----------- Suporte -------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.suport{
+    min-height: 800px;
+    background:url(../assets/img/vinho.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.contatoarea{
+    width: 1005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contatoinfo{
+    color:#fff;
+    max-width: 500px;
+    line-height: 65px;
+    font-size: 18px;
+    
+}
+.contatoinfo i {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contato-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contatoinfo, .contato-form{
+    flex: 1;
+}
+
+.contato-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contato-form .texto {
+    background: #000;
+    color: #fff;
+    border:none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+
+.contato-form .texto:first-child{
+    margin-right: 15px;
+}
+
+.contato-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contato-form .send-btn{
+    float: right;
+    background: #800000;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.contato-form .send-btn:hover{
+    background:#E93E33;
+}
+
+@media screen and (max-width:950px){
+    .contatoarea{
+        flex-direction: column;
+    }
+    
+    .contato-form, .contatoarea{
+        margin: 30px 50px;
+    }
+
+    .contato-form h2{
+        font-size: 30px;
+    }
+    
+    .contato-form .texto{
+        width: 100%;
+    }
+    
+}
+
+/* css alerta */
+.alerta{
+    z-index: 1;
+    background: #9AF57F;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #5CE933;
+    border-radius: 4px;
+}
+
+.alerta-erro{
+    z-index: 1;
+    background: #FFFB81;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid #F5EF25;
+    border-radius: 4px;
+}
+
+/* ----------- Roda-pe -------------*/
+
+.footer {
+  background-color: #FD4556;
+  color: white;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ----------- Side's (?) -------------*/
+/* .side1 {
+    background: url(../assets/img/foto2.jpg) no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+.side2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    
+}
+
+.side2 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: 600;
+    margin: 3px;
+} */
